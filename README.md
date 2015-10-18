@@ -1,10 +1,10 @@
-# 我的 Mac 工作环境
+# 一个 iOS 开发者的 Mac 工作环境
 
 ## 目录
 1. [OS X](#1-os-x)
 2. [常用工具](#2-常用工具)
 3. [开发工具](#3-开发工具)
-4. [chrome 插件及 web 应用](#4-Chrome-插件及-web-应用)
+4. [chrome 插件及 web 应用](#4-Chrome插件及web应用)
 5. [团队协作工具](#5-团队协作工具)
 
 ## 1. OS X
@@ -117,7 +117,8 @@
 - [Yummy FTP](http://www.yummysoftware.com/)，FTP+SFTP+FTPS 客户端
 
 
-## 4. Chrome 插件及 web 应用
+## 4. Chrome插件及web应用
+
 - 1Password
 - [AdBlock](https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom), 广告拦截插件
 - [Awesome Screenshot](https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj)，网页截图插件
@@ -140,10 +141,9 @@
 - [眼不见心不烦（新浪微博）](https://chrome.google.com/webstore/detail/%E7%9C%BC%E4%B8%8D%E8%A7%81%E5%BF%83%E4%B8%8D%E7%83%A6%EF%BC%88%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A%EF%BC%89/aognaapdfnnldnjglanfbbklaakbpejm)，屏蔽微博上的一些营销信息，减少信息干扰
 
 ## 5. 团队协作工具
+
 - [BearyChat](https://bearychat.com/)，团队沟通工具，团队网络环境较好时推荐用`Slack`
 - [Worktile](https://worktile.com/)，目前团队使用的协作工具，团队网络状况良好时推荐 Trello + Google Apps for work.
 - [Slack](https://slack.com/)，团队协作沟通工具，配合机器人与其他团队协作工具，生产力工具是时候抛弃QQ群而使用slack
 - [Trello](https://trello.com/)，团队协作工具，抛开网络环境不谈体验最好
-
-
 

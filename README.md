@@ -1,4 +1,4 @@
-# 一个 iOS 开发者的 Mac 工作环境
+# 一个 iOS 开发者的 OS X 工作环境
 
 ## 目录
 1. [OS X](#1-os-x)
@@ -92,7 +92,6 @@
 - [Mark Man](http://www.getmarkman.com/)，设计稿标注、测量工具
 - [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html)，监控、控制应用程序的网络进出请求
 - [Liya](http://cutedgesystems.com/software/liya/)，数据库文件查询管理工具，支持 SQLite, MySQL, PostgreSQL 数据库。
-- [Parallels Desktop](http://www.cocoatech.com/pathfinder/)，虚拟机
 - [Parallels Desktop](http://www.cocoatech.com/pathfinder/)，虚拟机
 - [PyCharm](www.jetbrains.com/PyCharm‎)，Python 开发 IDE
 - [Pngyu](http://nukesaq88.github.io/Pngyu/)，使用 pngquant 引擎的一款有损 png 图片压缩工具

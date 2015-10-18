@@ -4,7 +4,7 @@
 1. [OS X](#1-os-x)
 2. [常用工具](#2-常用工具)
 3. [开发工具](#3-开发工具)
-4. [chrome 插件及 web 应用](#4-Chrome插件及web应用)
+4. [chrome 插件及 web 应用](#4-chrome 插件及 web 应用)
 5. [团队协作工具](#5-团队协作工具)
 
 ## 1. OS X
@@ -116,7 +116,7 @@
 - [Yummy FTP](http://www.yummysoftware.com/)，FTP+SFTP+FTPS 客户端
 
 
-## 4. Chrome插件及web应用
+## 4. Chrome 插件及 web 应用
 
 - 1Password
 - [AdBlock](https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom), 广告拦截插件

@@ -4,10 +4,10 @@
 1. [OS X](#1-os-x)
 2. [常用工具](#2-常用工具)
 3. [开发工具](#3-开发工具)
-    - [Homebrew](#3-1-Homebrew)
-    - [iTerm2](#3-2-Iterm2)
-    - [SublimeText3](#3-3-SublimeText3)
-    - [其他开发工具](#3-4-其他开发工具)
+    - [Homebrew](#31-Homebrew)
+    - [iTerm2](#32-Iterm2)
+    - [SublimeText3](#33-SublimeText-3)
+    - [其他开发工具](#34-其他开发工具)
 4. [chrome 插件及 web 应用](#4-chrome-插件及-web-应用)
 5. [团队协作工具](#5-团队协作工具)
 
@@ -115,7 +115,7 @@ $ brew install brew-cask  // 安装 brew-cask
 - [Oh My Zsh](http://ohmyz.sh)
     个人安装的插件：git, autojump, sublime
 
-### 3.3 SublimeText3
+### 3.3 SublimeText 3
 [Sublime Text](https://www.sublimetext.com/)，Xcode 外的主力编辑工具 个人安装的插件：
 
 - All Autocomplete，搜索所有打开文件来寻找匹配提示词

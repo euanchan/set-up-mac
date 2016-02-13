@@ -4,6 +4,10 @@
 1. [OS X](#1-os-x)
 2. [常用工具](#2-常用工具)
 3. [开发工具](#3-开发工具)
+    - [Homebrew](#3-1-Homebrew)
+    - [iTerm2](#3-2-Iterm2)
+    - [SublimeText3](#3-3-SublimeText3)
+    - [其他开发工具](#3-4-其他开发工具)
 4. [chrome 插件及 web 应用](#4-chrome-插件及-web-应用)
 5. [团队协作工具](#5-团队协作工具)
 
@@ -72,12 +76,34 @@
 - [TeamViewer](https://www.teamviewer.com/en/index.aspx)，跨平台远程协助工具
 
 ## 3. 开发工具
-- [Beyond Compare](http://www.scootersoftware.com/features.php) ，离开 windows 平台时念念不忘的比较工具，已有 Mac 版
-- [Charles](http://www.charlesproxy.com/)，http 抓包工具
-- [CodeRunner](https://coderunnerapp.com/)，支持多语言的快速代码编写、运行工具，主要用于小段c/cpp/python代码的编写
-- [Dash](https://kapeli.com/dash)，常用 API 文档浏览器，代码片段管理
-- [FauxPas](http://fauxpasapp.com/)，iOS Mac 工程代码静态检查
-- [iFunBox](http://i-funbox.com/ifunboxmac/)，iPhone/iPad 文件夹管理
+
+### 3.1 Homebrew
+安装包管理工具 [Homebrew](http://brew.sh/)
+在安装 Homebrew 之前，需要将 Xcode Command Line Tools 安装完成，这样你就可以使用基于 Xcode Command Line Tools 编译的 Homebrew。
+
+在 terminal 中复制以下命令（不包括 $），跟随指引，将完成 Hombrew 安装。
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+安装完后，运行以下命令，确保 brew 运行正常。
+```
+$ brew doctor
+```
+安装完成后，Homwbrew 会将本地 /usr/local 初始化为 git 的工作树，并将目录所有者变更为当前所操作的用户，将来 brew 的相关操作不需要 sudo 。
+
+#### Homebrew cask
+安装 brew-cask，通过 brew-cask 快速安装、管理图形界面程序
+```
+$ brew tap caskroom/cask  // 添加 Github 上的 caskroom/cask 库
+$ brew install brew-cask  // 安装 brew-cask
+```
+
+- [文件预览插件](https://github.com/sindresorhus/quick-look-plugins)
+有些插件可以让 Mac 上的文件预览更有效，比如语法高亮、markdown 渲染、json 预览等等。
+
+### 3.2 iTerm2
+
 - [iTerm2](https://www.iterm2.com/)，替代系统 Terminal。
 
     个人习惯开启全局呼出快捷键，快速显示隐藏 iTerm，设置为 `⌘`+`.`  
@@ -89,6 +115,28 @@
 - [Oh My Zsh](http://ohmyz.sh)
     个人安装的插件：git, autojump, sublime
 
+### 3.3 SublimeText3
+[Sublime Text](https://www.sublimetext.com/)，Xcode 外的主力编辑工具 个人安装的插件：
+
+- All Autocomplete，搜索所有打开文件来寻找匹配提示词
+- BracketHighlighter, 匹配括号、引号
+- ConvertToUTF8，查看非 utf-8 编码的文档
+- Git
+- GitGutter, 在侧边槽显示 git diff
+- LiveReload
+- MarkdownEditing
+- Pretty JSON
+- SideBarEnhancement，侧边文件夹栏增加常用右键菜单
+- SideBarGit，侧边文件夹栏增加 git 常用命令
+- SublimeLinter，高亮错误代码
+
+### 3.4 其他开发工具
+- [Beyond Compare](http://www.scootersoftware.com/features.php) ，离开 windows 平台时念念不忘的比较工具，已有 Mac 版
+- [Charles](http://www.charlesproxy.com/)，http 抓包工具
+- [CodeRunner](https://coderunnerapp.com/)，支持多语言的快速代码编写、运行工具，主要用于小段c/cpp/python代码的编写
+- [Dash](https://kapeli.com/dash)，常用 API 文档浏览器，代码片段管理
+- [FauxPas](http://fauxpasapp.com/)，iOS Mac 工程代码静态检查
+- [iFunBox](http://i-funbox.com/ifunboxmac/)，iPhone/iPad 文件夹管理
 - [Mark Man](http://www.getmarkman.com/)，设计稿标注、测量工具
 - [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html)，监控、控制应用程序的网络进出请求
 - [Liya](http://cutedgesystems.com/software/liya/)，数据库文件查询管理工具，支持 SQLite, MySQL, PostgreSQL 数据库。
@@ -99,22 +147,7 @@
 - [SimPholders](https://simpholders.com/)，帮助快速访问 iPhone 模拟器，重置库和文件
 - [Sketch](http://www.sketchapp.com/)，界面设计工具
 - [SourceTree](https://www.sourcetreeapp.com/)，比较过几个 GUI git 工具，Mac 下使用最顺手的 git 工具。建议先熟悉 git command 后再使用GUI工具。
-- [Sublime Text](http://www.sublimetext.com/3)，Xcode 外的主力编辑工具
-    个人安装的插件：
-    - All Autocomplete，搜索所有打开文件来寻找匹配提示词
-    - BracketHighlighter, 匹配括号、引号
-    - ConvertToUTF8，查看非 utf-8 编码的文档
-    - Git
-    - GitGutter,  在侧边槽显示 git diff
-    - LiveReload
-    - MarkdownEditing
-    - Pretty JSON
-    - SideBarEnhancement，侧边文件夹栏增加常用右键菜单
-    - SideBarGit，侧边文件夹栏增加 git 常用命令
-    - SublimeLinter，高亮错误代码
-    
 - [Yummy FTP](http://www.yummysoftware.com/)，FTP+SFTP+FTPS 客户端
-
 
 ## 4. Chrome 插件及 web 应用
 

@@ -4,10 +4,11 @@
 1. [OS X](#1-os-x)
 2. [常用工具](#2-常用工具)
 3. [开发工具](#3-开发工具)
-    - [Homebrew](#31-homebrew)
-    - [iTerm2](#32-iterm2)
-    - [SublimeText3](#33-sublimetext-3)
-    - [其他开发工具](#34-其他开发工具)
+    - 3.1 [Homebrew](#31-homebrew)
+    - 3.2 [iTerm2](#32-iterm2)
+    - 3.3 [zsh)(#33-zsh)
+    - 3.4 [SublimeText 3](#34-sublimetext-3)
+    - 3.5 [其他开发工具](#35-其他开发工具)
 4. [chrome 插件及 web 应用](#4-chrome-插件及-web-应用)
 5. [团队协作工具](#5-团队协作工具)
 
@@ -99,23 +100,62 @@ $ brew tap caskroom/cask  // 添加 Github 上的 caskroom/cask 库
 $ brew install brew-cask  // 安装 brew-cask
 ```
 
-- [文件预览插件](https://github.com/sindresorhus/quick-look-plugins)
-有些插件可以让 Mac 上的文件预览更有效，比如语法高亮、markdown 渲染、json 预览等等。
+安装[常用文件预览插件](https://github.com/sindresorhus/quick-look-plugins)，增强 Mac 的文件预览功能。
+- QLColorCode (代码高亮) brew cask install qlcolorcode
+- QLStephen (预览无拓展名文本文件，如 README) brew cask install qlstephen 
+- QLMarkdown (预览 markdown 文件) brew cask install qlmarkdown
+- QuickLookJSON (预览 JSON 文件) brew cask cask install quicklook-json
+- BetterZipQL (预览 zip 包内容) brew cask install betterzipql
+- QLImageSize (预览图片分辨率、大小) brew cask install qlimagesize
+- WebP (预览 WebP 图片) brew cask install webpquicklook
+- Suspicious Package (预览 pkg 包目录) brew cask install suspicious-package
+- ProvisionQL (预览 iPa 包信息) brew cask install provisionql
+- 
 
 ### 3.2 iTerm2
+终端使用 [iTerm2](https://www.iterm2.com/)，代替系统 Terminal。方便支持主题，画面分隔，自定义快捷键
 
-- [iTerm2](https://www.iterm2.com/)，替代系统 Terminal。
+个人习惯开启全局呼出快捷键，快速显示隐藏 iTerm，设置为 `⌘`+`.` ，更多设置可以参考 [打造好用的终端](http://imwuyu.me/talk-about/cool-iterm2.html/)。
 
-    个人习惯开启全局呼出快捷键，快速显示隐藏 iTerm，设置为 `⌘`+`.`  
-    bash 常用快捷键： [详细版](http://ss64.com/bash/syntax-keyboard.html)
-    - ctrl + a/e, 将光标移到行开头/行结尾
-    - ctrl + b/f, 将光标往左移/右移一个字符
-    - alt + b/f, 将光标左移/右移一个单词（需在 profile 的 key 标签页，把`Left option (⌥) key acts as`和`Right option (⌥) key acts as`都设置成`+ESC`
+bash 常用快捷键： [详细版](http://ss64.com/bash/syntax-keyboard.html)
+- ctrl + a/e, 将光标移到行开头/行结尾
+- ctrl + b/f, 将光标往左移/右移一个字符
+- alt + b/f, 将光标左移/右移一个单词（需在 profile 的 key 标签页，把`Left option (⌥) key acts as`和`Right option (⌥) key acts as`都设置成`+ESC`
+- ctrl + p/n, 前一条指令/后一条指令
+    
+iTerm2 常用快捷键：
+- cmd + shift + h  粘贴历史记录
+- cmd + ;   自动完成列表
+- cmd + (shift) + d  画面分隔 (竖向)
+- cmd + shift + m/j  记录位置，跳转到记录位置
 
-- [Oh My Zsh](http://ohmyz.sh)
-    个人安装的插件：git, autojump, sublime
+### 3.3 zsh 
+使用 zsh 代替系统默认 shell，详情[终极 shell](http://macshuo.com/?p=676)。
 
-### 3.3 SublimeText 3
+安装 [oh my zsh](https://github.com/robbyrussell/oh-my-zsh) 来快速配置 zsh。
+
+oh my zsh 插件，通过 ~/.zshrc 的 plugins 配置
+- autojump
+使用 brew 安装
+```
+brew install autojump
+```
+> Add the following line to your ~/.bash_profile or ~/.zshrc file (and remember
+to source the file to update your current session):
+  [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+根据 brew 安装提示，在.zshrc 中添加配置.
+
+#### zsh + oh-my-zsh + 常用插件使用
+- 历史记录功能， 输入 git 然后使用上下箭头可以翻阅执行过的 git *** 命令
+- 更全面的补全：路径、命令、命令参数、插件内容补全。按 tab 键触发补全，按两下 tab 键列出所有补全项，使用 *ctrl + n/p/f/b* 在补全项间切换。
+- 智能跳转：结合 autojump，zsh 会记录访问过的目录，通过 j + '目录名' 即可直接进行目录跳转，且目录名支持模糊匹配和自动补全。可以使用 j -s 查看记录及权重。
+- 历史目录浏览、跳转： 输入 d，列出当前会话的目录访问记录，输入序号可直接跳转
+- 当前目录，上级目录跳转可省略 cd 
+- 通配符搜索：*ls -l **/*.sh*， 文件少时可以代替 find 命令
+
+
+### 3.4 SublimeText 3
 [Sublime Text](https://www.sublimetext.com/)，Xcode 外的主力编辑工具 个人安装的插件：
 
 - All Autocomplete，搜索所有打开文件来寻找匹配提示词
@@ -130,7 +170,7 @@ $ brew install brew-cask  // 安装 brew-cask
 - SideBarGit，侧边文件夹栏增加 git 常用命令
 - SublimeLinter，高亮错误代码
 
-### 3.4 其他开发工具
+### 3.5 其他开发工具
 - [Beyond Compare](http://www.scootersoftware.com/features.php) ，离开 windows 平台时念念不忘的比较工具，已有 Mac 版
 - [Charles](http://www.charlesproxy.com/)，http 抓包工具
 - [CodeRunner](https://coderunnerapp.com/)，支持多语言的快速代码编写、运行工具，主要用于小段c/cpp/python代码的编写

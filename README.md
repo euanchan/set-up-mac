@@ -6,7 +6,7 @@
 3. [开发工具](#3-开发工具)
     - 3.1 [Homebrew](#31-homebrew)
     - 3.2 [iTerm2](#32-iterm2)
-    - 3.3 [zsh)(#33-zsh)
+    - 3.3 [zsh](#33-zsh)
     - 3.4 [SublimeText 3](#34-sublimetext-3)
     - 3.5 [其他开发工具](#35-其他开发工具)
 4. [chrome 插件及 web 应用](#4-chrome-插件及-web-应用)

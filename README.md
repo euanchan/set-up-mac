@@ -7,10 +7,10 @@
     - 3.1 [Homebrew](#31-homebrew)
     - 3.2 [iTerm2](#32-iterm2)
         - [常用快捷键](https://github.com/EuanChan/set-up-mac/blob/master/README.md#常用快捷键) 
-        - [新书引导命令](https://github.com/EuanChan/set-up-mac/blob/master/README.md#新手引导命令)
     - 3.3 [zsh](#33-zsh)
-    - 3.4 [SublimeText 3](#34-sublimetext-3)
-    - 3.5 [其他开发工具](#35-其他开发工具)
+    - 3.4 [基础命令](##34-基础命令)
+    - 3.5 [SublimeText 3](#35-sublimetext-3)
+    - 3.6 [其他开发工具](#36-其他开发工具)
 4. [chrome 插件及 web 应用](#4-chrome-插件及-web-应用)
 5. [团队协作工具](#5-团队协作工具)
 
@@ -190,18 +190,6 @@ $ brew install brew-cask  // 安装 brew-cask
 - cmd + alt + i     input to all panes in current tab
 ```
 
-#### 新手引导命令
-```
-- stree                  set "alias stree='open -a SourceTree'" in .zshrc first, launch git repo in SourceTree with "stree /path-of-repo"
-- st                     open directory or file in SublimeText, eg: "st ." open current path in SublimeText
-- tldr grep              Simplified and community-driven man pages, http://tldr-pages.github.io/
-- *command line + &*     Put command line run in background.
-- *jobs -l*              List all task status in the background.
-- *fg %jobNum*           put background task to foreground.
-- *bg %jobNum*           put foreground task to background.
-- *kill -signal %jobNum* eg: kill -9 %1; jobs -l   # kill job 1 and echo job status.
-```
-
 ### 3.3 zsh 
 使用 zsh 代替系统默认 shell，详情[终极 shell](http://macshuo.com/?p=676)。
 
@@ -227,8 +215,83 @@ to source the file to update your current session):
 - 当前目录，上级目录跳转可省略 cd 
 - 通配符搜索：*ls -l **/*.sh*， 文件少时可以代替 find 命令
 
+### 3.4 基础命令
+- [tldr](http://tldr-pages.github.io/)，没耐心看 man 时，可使用 tldr 方便查看命令基本用法。
 
-### 3.4 SublimeText 3
+    eg: "tldr grep"
+
+- man, eg. man grep
+
+- stree，设置从命令行启动 SourceTree 的快捷方式
+
+    set "alias stree='open -a SourceTree'" in .zshrc first, launch git repo in SourceTree with "stree /path-of-repo"
+    eg: "stree .", 在 SourceTree 打开当前目录
+
+- st, 快捷启动 SublimeText
+
+    eg: "st ." open current path in SublimeText
+
+- [autojump](https://github.com/wting/autojump#usage)  
+
+    - j foo, Jump To A Directory That Contains foo.
+    - jo foo, Instead of jumping to a directory, you can open a file explorer window.
+
+- grep, Matches patterns in input text.
+    ```sh
+    grep -i something file_path     # Search without case-sensitivity
+    grep -r something .             # Search recursively in current directory for an exact string
+    egrep ^regex$ file_path         # Use a regex
+    grep -C 3 something file_path   # See 3 lines of context
+    grep -c something file_path     # Print the count of matches instead of the matching text
+    grep -n something file_path     # Print line number for each match
+    cat file_path | grep something  # Use the standard input instead of a file
+    ls -l | grep -i name            # list the files filename contain "name"
+    ```
+
+- find
+    ```
+    find root_path -name '*.py'                              # Find files by extension 
+    find root_path -path '**/lib/**/*.py'                    # Find files matching path pattern 
+    find root_path -name '*.py' -exec wc -l {} \;            # Run a command for each file, use {} within the command to access the filename
+    find root_path -name '*.py' -mtime -1d                   # Find files modified since a certain time                       
+    find root_path -size +500k -size -10MB -iname '*.TaR.gZ' # Find files using case insensitive name matching, of a certain size
+    find root_path -name '*.py' -mtime -180d -delete         # Delete files by name, older than a certain number of days
+    find root_path -empty                                    # Find empty files or directories 
+    find root_path -name '*.py' -or -name '*.r'              # Find files matching more than one search criteria 
+    ```
+
+- file operate  
+    - cp, -r        # "cp file.html{,.backup}", make a backup.
+    - mv,
+    - rm, -i -f -r
+
+- ps, Information about running processes.
+    ```
+    ps aux | grep string    # Search for a process that matches a string
+    ps aux                  # 查看系统所有的进程数据  
+    ps ax                   # 查看不与terminal有关的所有进程  
+    ps -lA                  # 查看系统所有的进程数据  
+    ps axjf                 # 查看连同一部分进程树状态 
+    ```
+
+- command line + &      # Put command line run in background.
+- jobs -l               # List all task status in the background.
+- fg %jobnumber         # put background task to foreground.
+- bg %jobnumber         # put foreground task to background.
+- kill
+    ```
+    kill -signal %jobnumber     # get jobnumber from *jobs* command
+    kill -signal PID            # get PID from *ps* command
+    
+    signal values:
+    1：SIGHUP，启动被终止的进程  
+    2：SIGINT，相当于输入ctrl+c，中断一个程序的进行  
+    9：SIGKILL，强制中断一个进程的进行  
+    15：SIGTERM，以正常的结束进程方式来终止进程  
+    17：SIGSTOP，相当于输入ctrl+z，暂停一个进程的进行  
+    ```
+
+### 3.5 SublimeText 3
 [Sublime Text](https://www.sublimetext.com/)，Xcode 外的主力编辑工具 个人安装的插件：
 
 - All Autocomplete，搜索所有打开文件来寻找匹配提示词
@@ -243,7 +306,7 @@ to source the file to update your current session):
 - SideBarGit，侧边文件夹栏增加 git 常用命令
 - SublimeLinter，高亮错误代码
 
-### 3.5 其他开发工具
+### 3.6 其他开发工具
 - [Beyond Compare](http://www.scootersoftware.com/features.php) ，离开 windows 平台时念念不忘的比较工具，已有 Mac 版
 - [Charles](http://www.charlesproxy.com/)，http 抓包工具
 - [CodeRunner](https://coderunnerapp.com/)，支持多语言的快速代码编写、运行工具，主要用于小段c/cpp/python代码的编写

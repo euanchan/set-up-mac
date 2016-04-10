@@ -217,8 +217,7 @@ to source the file to update your current session):
 
 ### 3.4 基础命令
 - [tldr](http://tldr-pages.github.io/)，没耐心看 man 时，可使用 tldr 方便查看命令基本用法。
-
-    eg: "tldr grep"
+    ![tldr](https://github.com/EuanChan/set-up-mac/blob/master/screenshot/screenshot-tldr.png)
 
 - man, eg. man grep
 
@@ -233,7 +232,7 @@ to source the file to update your current session):
     eg: "st ." open current path in SublimeText
 
 - [autojump](https://github.com/wting/autojump#usage)  
-
+    ![autojump](https://github.com/EuanChan/set-up-mac/blob/master/screenshot/screenshot-autojump.png)
     - j foo, Jump To A Directory That Contains foo.
     - jo foo, Instead of jumping to a directory, you can open a file explorer window.
 

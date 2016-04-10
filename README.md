@@ -123,10 +123,8 @@ keyboard 设置，方便以可视化的模式变更窗口大小：
 - [Evernote](https://evernote.com/)，使用国际版，包含分享功能
 - [Quiver](http://happenapps.com/#quiver)，Evernote 主要用于笔记收藏和手机记事，Quiver 主要用于代码、工作笔记
 - [Day One](http://dayoneapp.com/)，主要用于写私人日记
-
-- [ArcSoft Photo+](http://www.arcsoft.jp/photoplus/features.html) Mac 上目前找到的最顺手的快速浏览图片应用，静等 Picasa 更新浏览图片功能 
+- [ArcSoft Photo+](http://www.arcsoft.jp/photoplus/features.html) Mac 上目前找到的最顺手的快速浏览图片应用 
 - [Dropbox](https://www.dropbox.com/)
-
 - [iThoughtsX](http://toketaware.com/ithoughts-osx)，Mac 版脑图工具，更常用web的话推荐[百度脑图](http://naotu.baidu.com/)
 - [Lantern](https://getlantern.org/)，Open Internet for Everyone，遇上过几次 vpn 被封，现在的主力工具  
 - [Movist](https://itunes.apple.com/us/app/movist/id461788075?mt=12)，主力电影播放器，怀念windows QQ影音

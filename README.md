@@ -120,7 +120,7 @@ keyboard 设置，方便以可视化的模式变更窗口大小：
 - [英语常用词疑难用法手册.mdx](http://pan.baidu.com/s/1nt8b6dj)
 - [葛传椝英语惯用法词典.mdx](http://pan.baidu.com/s/1dDqGP1Z)
 
-### 2.10 其他常用软件
+### 2.10 其他常用工具
 - [Evernote](https://evernote.com/)，使用国际版，包含分享功能
 - [Quiver](http://happenapps.com/#quiver)，Evernote 主要用于笔记收藏和手机记事，Quiver 主要用于代码、工作笔记
 - [Day One](http://dayoneapp.com/)，主要用于写私人日记

@@ -227,6 +227,7 @@ to source the file to update your current session):
     set "alias stree='open -a SourceTree'" in .zshrc first, launch git repo in SourceTree with "stree /path-of-repo"
     eg: "stree .", 在 SourceTree 打开当前目录
 
+- open, 打开 Finder, eg "open ./" 在 Finder 打开当前目录
 - st, 快捷启动 SublimeText
 
     eg: "st ." open current path in SublimeText

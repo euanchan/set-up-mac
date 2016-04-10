@@ -14,7 +14,7 @@
     - 2.8 [CheatSheet](#28-cheatsheet)
     - 2.9 [Eudic 欧路词典](#29-eudic-欧路词典)
     - 2.10 [其他常用工具](#210-其他常用工具)
-    - 2.x [Finder 空格文件预览插件](#Finder-文件预览插件)
+    - 2.x [Finder 空格文件预览插件](#finder-文件预览插件)
     
 3. [开发工具](#3-开发工具)
     - 3.1 [Homebrew](#31-homebrew)

@@ -128,19 +128,77 @@ $ brew install brew-cask  // 安装 brew-cask
 ### 3.2 iTerm2
 终端使用 [iTerm2](https://www.iterm2.com/)，代替系统 Terminal。方便支持主题，画面分隔，自定义快捷键
 
-个人习惯开启全局呼出快捷键，快速显示隐藏 iTerm，设置为 `⌘`+`.` ，更多设置可以参考 [打造好用的终端](http://imwuyu.me/talk-about/cool-iterm2.html/)。
+个人习惯开启全局呼出快捷键，快速显示隐藏 iTerm，设置为 `⌘`+`.` ，在 profile 的 key 标签页，把`Left option (⌥) key acts as`和`Right option (⌥) key acts as`都设置成`+ESC`，更多设置可以参考 [打造好用的终端](http://imwuyu.me/talk-about/cool-iterm2.html/)。
 
-bash 常用快捷键： [详细版](http://ss64.com/bash/syntax-keyboard.html)
-- ctrl + a/e, 将光标移到行开头/行结尾
-- ctrl + b/f, 将光标往左移/右移一个字符
-- alt + b/f, 将光标左移/右移一个单词（需在 profile 的 key 标签页，把`Left option (⌥) key acts as`和`Right option (⌥) key acts as`都设置成`+ESC`
-- ctrl + p/n, 前一条指令/后一条指令
-    
-iTerm2 常用快捷键：
-- cmd + shift + h  粘贴历史记录
-- cmd + ;   自动完成列表
-- cmd + (shift) + d  画面分隔 (竖向)
-- cmd + shift + m/j  记录位置，跳转到记录位置
+#### 常用快捷键：
+```
+### Editor
+- Ctrl + r          history reverse search
+- Ctrl + s          history forward search
+- Ctrl + g          Escape from history searching mode
+- cmd + ;           autocomplete
+- cmd + shift + h   paste history
+
+- Ctrl + a / e      beginning/end of line
+- Ctrl + f / b      forward/back 1 char
+- Ctrl + p / n      previous/next history
+- Ctrl + d / h      delete current/previous char
+- Ctrl + w          delete the word behind point
+- Ctrl + k          delete text from the point to the end of the line
+- ctrl + u          delete current line
+
+- Alt + f / b       forward/back 1 word
+- Alt + d           delete the word after the cursor
+- Alt + w           delete text from the point to the beginning of the line
+
+- cmd + k           clear buffer
+- Ctrl + l          clear screen
+
+- !!                Execute last command in history
+- !abc              Execute last command in history beginning with abc
+- !abc:p            Print last command in history beginning with abc
+
+### Process Control
+- Ctrl + C          Interrupt/Kill whatever you are running (SIGINT)
+- Ctrl + l          Clear the screen
+- Ctrl + s          Stop output to the screen (for long running verbose commands)
+- Ctrl + q          Allow output to the screen (if previously stopped using command above)
+- Ctrl + D          Send an EOF marker, unless disabled by an option, this will close the current shell (EXIT)
+- Ctrl + Z          Send the signal SIGTSTP to the current task, which suspends it.
+                    To return to it later enter fg 'process name' (foreground).
+
+### Tab Navigation
+- cmd + t               open new tab
+- cmd + shift + ] / [     next/previous tab
+
+### Pane navigation
+- cmd + d           split pane left-right 
+- cmd + shift +d    split pane top-bottom 
+- cmd + ] / [       next/previous pane    
+
+### Search
+- cmd + f           open search bar
+- cmd + g           find next
+
+### Zooming / Font Resize
+- cmd + +           make font larger
+- cmd + -           make font smaller
+
+### Input to all panes
+- cmd + alt + i     input to all panes in current tab
+```
+
+#### 常用命令
+```
+- stree                  set "alias stree='open -a SourceTree'" in .zshrc first, launch git repo in SourceTree with "stree /path-of-repo"
+- st                     open directory or file in SublimeText, eg: "st ." open current path in SublimeText
+- tldr grep              Simplified and community-driven man pages, http://tldr-pages.github.io/
+- *command line + &*     Put command line run in background.
+- *jobs -l*              List all task status in the background.
+- *fg %jobNum*           put background task to foreground.
+- *bg %jobNum*           put foreground task to background.
+- *kill -signal %jobNum* eg: kill -9 %1; jobs -l   # kill job 1 and echo job status.
+```
 
 ### 3.3 zsh 
 使用 zsh 代替系统默认 shell，详情[终极 shell](http://macshuo.com/?p=676)。

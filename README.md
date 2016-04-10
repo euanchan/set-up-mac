@@ -135,15 +135,15 @@ keyboard 设置，方便以可视化的模式变更窗口大小：
 
 ### Finder 文件预览插件
 先安装 [brew cask](#31-homebrew)。然后安装[常用文件预览插件](https://github.com/sindresorhus/quick-look-plugins)，增强 Mac 的文件预览功能。
-- QLColorCode (代码高亮) brew cask install qlcolorcode
-- QLStephen (预览无拓展名文本文件，如 README) brew cask install qlstephen 
-- QLMarkdown (预览 markdown 文件) brew cask install qlmarkdown
-- QuickLookJSON (预览 JSON 文件) brew cask cask install quicklook-json
-- BetterZipQL (预览 zip 包内容) brew cask install betterzipql
-- QLImageSize (预览图片分辨率、大小) brew cask install qlimagesize
-- WebP (预览 WebP 图片) brew cask install webpquicklook
-- Suspicious Package (预览 pkg 包目录) brew cask install suspicious-package
-- ProvisionQL (预览 iPa 包信息) brew cask install provisionql
+- QLColorCode (代码高亮) `brew cask install qlcolorcode`
+- QLStephen (预览无拓展名文本文件，如 README) `brew cask install qlstephen` 
+- QLMarkdown (预览 markdown 文件) `brew cask install qlmarkdown`
+- QuickLookJSON (预览 JSON 文件) `brew cask cask install quicklook-json`
+- BetterZipQL (预览 zip 包内容) `brew cask install betterzipql`
+- QLImageSize (预览图片分辨率、大小) `brew cask install qlimagesize`
+- WebP (预览 WebP 图片) `brew cask install webpquicklook`
+- Suspicious Package (预览 pkg 包目录) `brew cask install suspicious-package`
+- ProvisionQL (预览 iPa 包信息) `brew cask install provisionql`
 
 ## 3. 开发工具
 

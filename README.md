@@ -3,6 +3,18 @@
 ## 目录
 1. [OS X](#1-os-x)
 2. [常用工具](#2-常用工具)
+    - 2.1 [Alfred](#21-alfred)
+        - [推荐 Alfred workflow](#推荐alfred-workflow)
+    - 2.2 [Moom](22-moom)
+    - 2.3 [Jitouch](23-jitouch)
+    - 2.4 [OmniFocus](24-omnifocus)
+    - 2.5 [Path Finder](25-path-finder)
+    - 2.6 [PopClip](26-popclip)
+    - 2.7 [1Password](27-1password)
+    - 2.8 [CheatSheet](28-cheatsheet)
+    - 2.9 [Eudic 欧路词典](29-eudic-欧路词典)
+    - 2.10 [其他常用工具](210-其他常用工具)
+    
 3. [开发工具](#3-开发工具)
     - 3.1 [Homebrew](#31-homebrew)
     - 3.2 [iTerm2](#32-iterm2)
@@ -23,70 +35,101 @@
 
 ## 2. 常用工具
 
-- [1Password](https://agilebits.com/onepassword/mac)，配套 iOS 版使用，管理常用密码
-- [Alfred](https://www.alfredapp.com/)，快捷键设为 alt + j
+### 2.1 Alfred
 
-    安装的 workflow:
-    - Baidu-Map
-    - Chrome History
-    - CocoaPods
-    - colors
-    - Douban
-    - encode-decode
-    - Finder-Settings
-    - flushdns
-    - GithubSearch
-    - HTTP-codes
-    - ip-address
-    - kill-process
-    - Last+changed+files
-    - meituanSuggest
-    - Network Info
-    - New OmniFocus Task
-    - Simulator-Folders
-    - Site+Search
-    - stackoverflowSearch
-    - sublime-text
-    - Timestamp
-    - Wi-Fi-Toggle
-    - Workflow-Search
-    - zhihu_Search
+[Alfred](https://www.alfredapp.com/)，快速启动工具，推荐购买升级包，快捷键设为 alt + j
 
-- [ArcSoft Photo+](http://www.arcsoft.jp/photoplus/features.html) Mac 上目前找到的最顺手的快速浏览图片应用，静等 Picasa 更新浏览图片功能 
-- [Caffeine](https://itunes.apple.com/en/app/caffeine/id411246225?mt=12)，离开电脑时想不自动待机时使用
-- [CheatSheet](http://www.mediaatelier.com/CheatSheet/)，快速查看当前程序的快捷键列表，默认的快捷键是长按`⌘`
-- [Day One](http://dayoneapp.com/)，写私人日记
-- [Dropbox](https://www.dropbox.com/)
-- [EuDic 欧路词典](http://www.eudic.net/eudic/mac_dictionary.aspx)  
+#### 推荐alfred-workflow:
+- Baidu-Map, # *bmap 鼓浪屿*, 搜索鼓浪屿相关地址列表
+- Caffeinate Control, # *caff 1h*, 1小时内不进入待机状态
+- Chrome Bookmarks, # *cb ios*, 搜索收藏夹内包含 ios 的收藏
+- Chrome History, # *ch ios*, 搜索 chrome 历史访问记录中包含 iOS 标题的访问
+- CocoaPods, # *pod yykit*, 在 cocoapods 中搜索 yykit
+- colors, # *#60aa82*, *hsl*, 显示颜色、转换颜色表示、显示拾色器
+- CountDown, # *timer 25m*, 简易的番茄时间计时器
+- Dash, # *iOS UIView*, 在 Dash 中的 iOS channel 搜索 UIView
+- Douban, # *book iOS*搜索 iOS 图书， *movie 豪斯* 搜索豪斯
+- encode-decode, # base64 encode/decode
+- Evernote
+    - Search:
+        - ens keyword, 搜索 evernote
+        - ens @ , to search in a selected notebook.
+        - ens # , to search notes with a selected tag.
+        - ent, Search in Notes Titles
+        - enr, Search Reminders Notes
+        - entodo, Search todo notes
+        - enrec, Search Last Updated Notes
+        - enu, Search Notes with URL
+        
+    - Create:
+        - enn, Create New note.
+        - typenote, Type a New note, Notebook: (default) | Tags: (none) | Reminder: (none) | Note: (type it). 
+        
+- Finder-Settings, # Finder Settings & desktop settings
+- flushdns, 
+- Github repos, # Search your github repositories
+- HTTP-codes, # *http 400*, 返回 http 编码值义
+- ip-address, # *ip*, 返回当前 ip
+- kill-process, # 
+- Last+changed+files, # *.last*, list last changed files.
+- New OmniFocus Task, # Omnifocus Action! @Context ::Project #Start #Due $Duration //Note
+- Simulator-Folders, 
+- sublime-text,
+- Timestamp,  # 标准日期转换
+- Wi-Fi-Toggle, # Wifi 控制
+- Workflow-Search, # Alfred workflow 搜索
+
+### 2.2 Moom
+
+[Moom](https://manytricks.com/moom/)，窗口尺寸快速管理，配合快捷键可快速平铺多个应用程序窗口。
+keyboard 设置，方便以可视化的模式变更窗口大小：
+
+- Trigger keyboard control with hot key:  ⌥ + 9, ☑ show cheat sheet, ☑ repeat to show grid.
+![moom-keyboard](https://github.com/EuanChan/set-up-mac/blob/master/screenshot/screenshot-moom-keyboard.png)
     
-    支持柯林斯词典，支持词库导入。分享两个词典
-    + [英语常用词疑难用法手册.mdx](http://pan.baidu.com/s/1nt8b6dj)
-    + [葛传椝英语惯用法词典.mdx](http://pan.baidu.com/s/1dDqGP1Z)
-
-- [Evernote](https://evernote.com/)，使用国际版，包含分享功能
-- [huhamhire-hosts](https://github.com/huhamhire/huhamhire-hosts)，更新 google 等服务的 ip
-- [instacalc](http://instacalc.com/)，计算器
-- [iThoughtsX](http://toketaware.com/ithoughts-osx)，Mac 版脑图工具，更常用web的话推荐[百度脑图](http://naotu.baidu.com/)
-- [Jitouch](https://www.jitouch.com/)，触摸板/Magic Mouse手势增强
-- [Lantern](https://getlantern.org/)，Open Internet for Everyone，遇上过几次 vpn 被封，现在的主力工具  
-- [Moom](https://manytricks.com/moom/)，窗口尺寸快速管理，配合快捷键可快速平铺多个应用程序窗口
-
-    keyboard 设置，方便以可视化的模式变更窗口大小：
-    - Trigger keyboard control with hot key:  ⌥ + 9, ☑ show cheat sheet, ☑ repeat to show grid.
-    ![moom-keyboard](https://github.com/EuanChan/set-up-mac/blob/master/screenshot/screenshot-moom-keyboard.png)
-    
-    自定义快捷键，方便快速在窗口最大化、还原、以半屏的方式展示之间切换，方便在多个显示器里快速布局窗口。
+- 自定义快捷键，方便快速在窗口最大化、还原、以半屏的方式展示之间切换，方便在多个显示器里快速布局窗口。
     - ⌥ + 1, move & zoom, 最大化窗口.
     - ⌥ + 2, revert to original dimensions. 还原大小
     - ⌥ + 3, move & zoom, 最大化到当前窗口左半屏幕
     - ⌥ + 4, move & zoom, 最大化到当前窗口右半屏幕
     - ⌥ + 0, move to other display, ☑ Resize proportionally, ☑ Loop through displays.
     ![moom-custom](https://github.com/EuanChan/set-up-mac/blob/master/screenshot/screenshot-moom-custom.png)
+
+### 2.3 Jitouch
+[Jitouch](https://www.jitouch.com/)，触摸板/Magic Mouse手势增强
+
+### 2.4 OmniFocus
+[OmniFocus](https://www.omnigroup.com/omnifocus)，主力任务管理工具，适合多任务、多环境并进时的复杂任务管理，配合 iPhone 版使用
+
+### 2.5 Path Finder
+[Path Finder](http://www.cocoatech.com/pathfinder/)，替代系统 Finder
+
+### 2.6 PopClip
+[PopClip](https://pilotmoon.com/popclip/)，选中文本后弹出快捷操作（搜索、翻译、新建OmniFocus任务等）
     
+### 2.7 1Password
+[1Password](https://agilebits.com/onepassword/mac)，配套 iOS 版使用，管理常用密码
+
+### 2.8 CheatSheet
+[CheatSheet](http://www.mediaatelier.com/CheatSheet/)，快速查看当前程序的快捷键列表，默认的快捷键是长按`⌘`
+
+### 2.9 Eudic 欧路词典
+[EuDic 欧路词典](http://www.eudic.net/eudic/mac_dictionary.aspx)  
+支持柯林斯词典，支持词库导入。分享两个词典
+- [英语常用词疑难用法手册.mdx](http://pan.baidu.com/s/1nt8b6dj)
+- [葛传椝英语惯用法词典.mdx](http://pan.baidu.com/s/1dDqGP1Z)
+
+### 2.10 其他常用软件
+- [Evernote](https://evernote.com/)，使用国际版，包含分享功能
+- [Quiver](http://happenapps.com/#quiver)，Evernote 主要用于笔记收藏和手机记事，Quiver 主要用于代码、工作笔记
+- [Day One](http://dayoneapp.com/)，主要用于写私人日记
+
+- [ArcSoft Photo+](http://www.arcsoft.jp/photoplus/features.html) Mac 上目前找到的最顺手的快速浏览图片应用，静等 Picasa 更新浏览图片功能 
+- [Dropbox](https://www.dropbox.com/)
+
+- [iThoughtsX](http://toketaware.com/ithoughts-osx)，Mac 版脑图工具，更常用web的话推荐[百度脑图](http://naotu.baidu.com/)
+- [Lantern](https://getlantern.org/)，Open Internet for Everyone，遇上过几次 vpn 被封，现在的主力工具  
 - [Movist](https://itunes.apple.com/us/app/movist/id461788075?mt=12)，主力电影播放器，怀念windows QQ影音
-- [OmniFocus](https://www.omnigroup.com/omnifocus)，主力任务管理工具，适合多任务、多环境并进时的复杂任务管理，配合 iPhone 版使用
-- [Path Finder](http://www.cocoatech.com/pathfinder/)，替代系统 Finder
-- [PopClip](https://pilotmoon.com/popclip/)，选中文本后弹出快捷操作（搜索、翻译、新建OmniFocus任务等）
 - [Reeder](http://reederapp.com/mac/)，RSS 阅读
 - [RescueTime](https://www.rescuetime.com/)，记录个人应用程序使用时间、浏览网站时间，统计分析个人工作习惯，辅助改善工作效率
 - [TeamViewer](https://www.teamviewer.com/en/index.aspx)，跨平台远程协助工具

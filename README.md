@@ -393,6 +393,7 @@ to source the file to update your current session):
 
 ## 5. 团队协作工具
 
+- [Bugtags](https://www.bugtags.com/), 需求反馈、bug 收集管理工具
 - [BearyChat](https://bearychat.com/)，团队沟通工具，团队网络环境较好时推荐用`Slack`
 - [Worktile](https://worktile.com/)，目前团队使用的协作工具，团队网络状况良好时推荐 Trello + Google Apps for work.
 - [Slack](https://slack.com/)，团队协作沟通工具，配合机器人与其他团队协作工具，生产力工具是时候抛弃QQ群而使用slack

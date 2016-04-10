@@ -14,6 +14,7 @@
     - 2.8 [CheatSheet](#28-cheatsheet)
     - 2.9 [Eudic 欧路词典](#29-eudic-欧路词典)
     - 2.10 [其他常用工具](#210-其他常用工具)
+    - 2.x [Finder 空格文件预览插件](#Finder-文件预览插件)
     
 3. [开发工具](#3-开发工具)
     - 3.1 [Homebrew](#31-homebrew)
@@ -132,6 +133,18 @@ keyboard 设置，方便以可视化的模式变更窗口大小：
 - [RescueTime](https://www.rescuetime.com/)，记录个人应用程序使用时间、浏览网站时间，统计分析个人工作习惯，辅助改善工作效率
 - [TeamViewer](https://www.teamviewer.com/en/index.aspx)，跨平台远程协助工具
 
+### Finder 文件预览插件
+先安装 [brew cask](#31-homebrew)。然后安装[常用文件预览插件](https://github.com/sindresorhus/quick-look-plugins)，增强 Mac 的文件预览功能。
+- QLColorCode (代码高亮) brew cask install qlcolorcode
+- QLStephen (预览无拓展名文本文件，如 README) brew cask install qlstephen 
+- QLMarkdown (预览 markdown 文件) brew cask install qlmarkdown
+- QuickLookJSON (预览 JSON 文件) brew cask cask install quicklook-json
+- BetterZipQL (预览 zip 包内容) brew cask install betterzipql
+- QLImageSize (预览图片分辨率、大小) brew cask install qlimagesize
+- WebP (预览 WebP 图片) brew cask install webpquicklook
+- Suspicious Package (预览 pkg 包目录) brew cask install suspicious-package
+- ProvisionQL (预览 iPa 包信息) brew cask install provisionql
+
 ## 3. 开发工具
 
 ### 3.1 Homebrew
@@ -155,17 +168,6 @@ $ brew doctor
 $ brew tap caskroom/cask  // 添加 Github 上的 caskroom/cask 库
 $ brew install brew-cask  // 安装 brew-cask
 ```
-
-安装[常用文件预览插件](https://github.com/sindresorhus/quick-look-plugins)，增强 Mac 的文件预览功能。
-- QLColorCode (代码高亮) brew cask install qlcolorcode
-- QLStephen (预览无拓展名文本文件，如 README) brew cask install qlstephen 
-- QLMarkdown (预览 markdown 文件) brew cask install qlmarkdown
-- QuickLookJSON (预览 JSON 文件) brew cask cask install quicklook-json
-- BetterZipQL (预览 zip 包内容) brew cask install betterzipql
-- QLImageSize (预览图片分辨率、大小) brew cask install qlimagesize
-- WebP (预览 WebP 图片) brew cask install webpquicklook
-- Suspicious Package (预览 pkg 包目录) brew cask install suspicious-package
-- ProvisionQL (预览 iPa 包信息) brew cask install provisionql
 
 
 ### 3.2 iTerm2

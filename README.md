@@ -6,6 +6,8 @@
 3. [开发工具](#3-开发工具)
     - 3.1 [Homebrew](#31-homebrew)
     - 3.2 [iTerm2](#32-iterm2)
+        - [常用快捷键](https://github.com/EuanChan/set-up-mac/blob/master/README.md#常用快捷键) 
+        - [新书引导命令](https://github.com/EuanChan/set-up-mac/blob/master/README.md#新手引导命令)
     - 3.3 [zsh](#33-zsh)
     - 3.4 [SublimeText 3](#34-sublimetext-3)
     - 3.5 [其他开发工具](#35-其他开发工具)
@@ -188,7 +190,7 @@ $ brew install brew-cask  // 安装 brew-cask
 - cmd + alt + i     input to all panes in current tab
 ```
 
-#### 常用命令
+#### 新手引导命令
 ```
 - stree                  set "alias stree='open -a SourceTree'" in .zshrc first, launch git repo in SourceTree with "stree /path-of-repo"
 - st                     open directory or file in SublimeText, eg: "st ." open current path in SublimeText

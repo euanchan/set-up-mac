@@ -15,15 +15,15 @@
     - 2.9 [Eudic 欧路词典](#29-eudic-欧路词典)
     - 2.10 [其他常用工具](#210-其他常用工具)
     - 2.x [Finder 空格文件预览插件](#finder-文件预览插件)
-    
+
 3. [开发工具](#3-开发工具)
     - 3.1 [Homebrew](#31-homebrew)
     - 3.2 [iTerm2](#32-iterm2)
-        - [常用快捷键](#常用快捷键) 
+        - [常用快捷键](#常用快捷键)
     - 3.3 [zsh](#33-zsh)
-    - 3.4 [基础命令](#34-基础命令)
-    - 3.5 [SublimeText 3](#35-sublimetext-3)
-    - 3.6 [其他开发工具](#36-其他开发工具)
+    - 3.4 [命令行工具](#34-命令行工具)
+    - 3.5 [SublimeText 3](#36-sublimetext-3)
+    - 3.6 [其他开发工具](#37-其他开发工具)
 4. [chrome 插件及 web 应用](#4-chrome-插件及-web-应用)
 5. [团队协作工具](#5-团队协作工具)
 
@@ -61,20 +61,20 @@
         - entodo, Search todo notes
         - enrec, Search Last Updated Notes
         - enu, Search Notes with URL
-        
+
     - Create:
         - enn, Create New note.
-        - typenote, Type a New note, Notebook: (default) | Tags: (none) | Reminder: (none) | Note: (type it). 
-        
+        - typenote, Type a New note, Notebook: (default) | Tags: (none) | Reminder: (none) | Note: (type it).
+
 - Finder-Settings, # Finder Settings & desktop settings
-- flushdns, 
+- flushdns,
 - Github repos, # Search your github repositories
 - HTTP-codes, # *http 400*, 返回 http 编码值义
 - ip-address, # *ip*, 返回当前 ip
-- kill-process, # 
+- kill-process, #
 - Last+changed+files, # *.last*, list last changed files.
 - New OmniFocus Task, # Omnifocus Action! @Context ::Project #Start #Due $Duration //Note
-- Simulator-Folders, 
+- Simulator-Folders,
 - sublime-text,
 - Timestamp,  # 标准日期转换
 - Wi-Fi-Toggle, # Wifi 控制
@@ -87,7 +87,7 @@ keyboard 设置，方便以可视化的模式变更窗口大小：
 
 - Trigger keyboard control with hot key:  ⌥ + 9, ☑ show cheat sheet, ☑ repeat to show grid.
 ![moom-keyboard](https://github.com/EuanChan/set-up-mac/blob/master/screenshot/screenshot-moom-keyboard.png)
-    
+
 - 自定义快捷键，方便快速在窗口最大化、还原、以半屏的方式展示之间切换，方便在多个显示器里快速布局窗口。
     - ⌥ + 1, move & zoom, 最大化窗口.
     - ⌥ + 2, revert to original dimensions. 还原大小
@@ -107,7 +107,7 @@ keyboard 设置，方便以可视化的模式变更窗口大小：
 
 ### 2.6 PopClip
 [PopClip](https://pilotmoon.com/popclip/)，选中文本后弹出快捷操作（搜索、翻译、新建OmniFocus任务等）
-    
+
 ### 2.7 1Password
 [1Password](https://agilebits.com/onepassword/mac)，配套 iOS 版使用，管理常用密码
 
@@ -115,7 +115,7 @@ keyboard 设置，方便以可视化的模式变更窗口大小：
 [CheatSheet](http://www.mediaatelier.com/CheatSheet/)，快速查看当前程序的快捷键列表，默认的快捷键是长按`⌘`
 
 ### 2.9 Eudic 欧路词典
-[EuDic 欧路词典](http://www.eudic.net/eudic/mac_dictionary.aspx)  
+[EuDic 欧路词典](http://www.eudic.net/eudic/mac_dictionary.aspx)
 支持柯林斯词典，支持词库导入。分享两个词典
 - [英语常用词疑难用法手册.mdx](http://pan.baidu.com/s/1nt8b6dj)
 - [葛传椝英语惯用法词典.mdx](http://pan.baidu.com/s/1dDqGP1Z)
@@ -124,10 +124,10 @@ keyboard 设置，方便以可视化的模式变更窗口大小：
 - [Evernote](https://evernote.com/)，使用国际版，包含分享功能
 - [Quiver](http://happenapps.com/#quiver)，Evernote 主要用于笔记收藏和手机记事，Quiver 主要用于代码、工作笔记
 - [Day One](http://dayoneapp.com/)，主要用于写私人日记
-- [ArcSoft Photo+](http://www.arcsoft.jp/photoplus/features.html) Mac 上目前找到的最顺手的快速浏览图片应用 
+- [ArcSoft Photo+](http://www.arcsoft.jp/photoplus/features.html) Mac 上目前找到的最顺手的快速浏览图片应用
 - [Dropbox](https://www.dropbox.com/)
 - [iThoughtsX](http://toketaware.com/ithoughts-osx)，Mac 版脑图工具，更常用web的话推荐[百度脑图](http://naotu.baidu.com/)
-- [Lantern](https://getlantern.org/)，Open Internet for Everyone，遇上过几次 vpn 被封，现在的主力工具  
+- [Lantern](https://getlantern.org/)，Open Internet for Everyone，遇上过几次 vpn 被封，现在的主力工具
 - [Movist](https://itunes.apple.com/us/app/movist/id461788075?mt=12)，主力电影播放器，怀念windows QQ影音
 - [Reeder](http://reederapp.com/mac/)，RSS 阅读
 - [RescueTime](https://www.rescuetime.com/)，记录个人应用程序使用时间、浏览网站时间，统计分析个人工作习惯，辅助改善工作效率
@@ -136,7 +136,7 @@ keyboard 设置，方便以可视化的模式变更窗口大小：
 ### Finder 文件预览插件
 先安装 [brew cask](#31-homebrew)。然后安装[常用文件预览插件](https://github.com/sindresorhus/quick-look-plugins)，增强 Mac 的文件预览功能。
 - QLColorCode (代码高亮) `brew cask install qlcolorcode`
-- QLStephen (预览无拓展名文本文件，如 README) `brew cask install qlstephen` 
+- QLStephen (预览无拓展名文本文件，如 README) `brew cask install qlstephen`
 - QLMarkdown (预览 markdown 文件) `brew cask install qlmarkdown`
 - QuickLookJSON (预览 JSON 文件) `brew cask cask install quicklook-json`
 - BetterZipQL (预览 zip 包内容) `brew cask install betterzipql`
@@ -217,9 +217,9 @@ $ brew install brew-cask  // 安装 brew-cask
 - cmd + shift + ] / [     next/previous tab
 
 ### Pane navigation
-- cmd + d           split pane left-right 
-- cmd + shift +d    split pane top-bottom 
-- cmd + ] / [       next/previous pane    
+- cmd + d           split pane left-right
+- cmd + shift +d    split pane top-bottom
+- cmd + ] / [       next/previous pane
 
 ### Search
 - cmd + f           open search bar
@@ -233,7 +233,7 @@ $ brew install brew-cask  // 安装 brew-cask
 - cmd + alt + i     input to all panes in current tab
 ```
 
-### 3.3 zsh 
+### 3.3 zsh
 使用 zsh 代替系统默认 shell，详情[终极 shell](http://macshuo.com/?p=676)。
 
 安装 [oh my zsh](https://github.com/robbyrussell/oh-my-zsh) 来快速配置 zsh。
@@ -255,30 +255,32 @@ to source the file to update your current session):
 - 更全面的补全：路径、命令、命令参数、插件内容补全。按 tab 键触发补全，按两下 tab 键列出所有补全项，使用 *ctrl + n/p/f/b* 在补全项间切换。
 - 智能跳转：结合 autojump，zsh 会记录访问过的目录，通过 j + '目录名' 即可直接进行目录跳转，且目录名支持模糊匹配和自动补全。可以使用 j -s 查看记录及权重。
 - 历史目录浏览、跳转： 输入 d，列出当前会话的目录访问记录，输入序号可直接跳转
-- 当前目录，上级目录跳转可省略 cd 
+- 当前目录，上级目录跳转可省略 cd
 - 通配符搜索：*ls -l **/*.sh*， 文件少时可以代替 find 命令
 
-### 3.4 基础命令
+### 3.4 命令行工具
+- [curl](https://github.com/curl/curl), [httpie](https://github.com/jakubroztocil/httpie)
+- [libimobiledevice](http://www.libimobiledevice.org/), for iOS
+- [chisel](https://github.com/facebook/chisel), for iOS
+- [synx](https://github.com/venmo/synx), for iOS
 - [tldr](http://tldr-pages.github.io/)，没耐心看 man 时，可使用 tldr 方便查看命令基本用法。
     ![tldr](https://github.com/EuanChan/set-up-mac/blob/master/screenshot/screenshot-tldr.png)
-
-- man, eg. man grep
+- [fastlane](https://github.com/fastlane/fastlane), for iOS
+- [autojump](https://github.com/wting/autojump#usage)
+    ![autojump](https://github.com/EuanChan/set-up-mac/blob/master/screenshot/screenshot-autojump.png)
+    - j foo, Jump To A Directory That Contains foo.
+    - jo foo, Instead of jumping to a directory, you can open a file explorer window.
 
 - stree，设置从命令行启动 SourceTree 的快捷方式
 
     set "alias stree='open -a SourceTree'" in .zshrc first, launch git repo in SourceTree with "stree /path-of-repo"
     eg: "stree .", 在 SourceTree 打开当前目录
 
-- open, 打开 Finder, eg "open ./" 在 Finder 打开当前目录
 - st, 快捷启动 SublimeText
 
     eg: "st ." open current path in SublimeText
 
-- [autojump](https://github.com/wting/autojump#usage)  
-    ![autojump](https://github.com/EuanChan/set-up-mac/blob/master/screenshot/screenshot-autojump.png)
-    - j foo, Jump To A Directory That Contains foo.
-    - jo foo, Instead of jumping to a directory, you can open a file explorer window.
-
+#### 基础命令
 - grep, Matches patterns in input text.
     ```sh
     grep -i something file_path     # Search without case-sensitivity
@@ -293,17 +295,17 @@ to source the file to update your current session):
 
 - find
     ```
-    find root_path -name '*.py'                              # Find files by extension 
-    find root_path -path '**/lib/**/*.py'                    # Find files matching path pattern 
+    find root_path -name '*.py'                              # Find files by extension
+    find root_path -path '**/lib/**/*.py'                    # Find files matching path pattern
     find root_path -name '*.py' -exec wc -l {} \;            # Run a command for each file, use {} within the command to access the filename
-    find root_path -name '*.py' -mtime -1d                   # Find files modified since a certain time                       
+    find root_path -name '*.py' -mtime -1d                   # Find files modified since a certain time
     find root_path -size +500k -size -10MB -iname '*.TaR.gZ' # Find files using case insensitive name matching, of a certain size
     find root_path -name '*.py' -mtime -180d -delete         # Delete files by name, older than a certain number of days
-    find root_path -empty                                    # Find empty files or directories 
-    find root_path -name '*.py' -or -name '*.r'              # Find files matching more than one search criteria 
+    find root_path -empty                                    # Find empty files or directories
+    find root_path -name '*.py' -or -name '*.r'              # Find files matching more than one search criteria
     ```
 
-- file operate  
+- file operate
     - cp, -r        # "cp file.html{,.backup}", make a backup.
     - mv,
     - rm, -i -f -r
@@ -311,10 +313,10 @@ to source the file to update your current session):
 - ps, Information about running processes.
     ```
     ps aux | grep string    # Search for a process that matches a string
-    ps aux                  # 查看系统所有的进程数据  
-    ps ax                   # 查看不与terminal有关的所有进程  
-    ps -lA                  # 查看系统所有的进程数据  
-    ps axjf                 # 查看连同一部分进程树状态 
+    ps aux                  # 查看系统所有的进程数据
+    ps ax                   # 查看不与terminal有关的所有进程
+    ps -lA                  # 查看系统所有的进程数据
+    ps axjf                 # 查看连同一部分进程树状态
     ```
 
 - command line + &      # Put command line run in background.
@@ -325,13 +327,13 @@ to source the file to update your current session):
     ```
     kill -signal %jobnumber     # get jobnumber from *jobs* command
     kill -signal PID            # get PID from *ps* command
-    
+
     signal values:
-    1：SIGHUP，启动被终止的进程  
-    2：SIGINT，相当于输入ctrl+c，中断一个程序的进行  
-    9：SIGKILL，强制中断一个进程的进行  
-    15：SIGTERM，以正常的结束进程方式来终止进程  
-    17：SIGSTOP，相当于输入ctrl+z，暂停一个进程的进行  
+    1：SIGHUP，启动被终止的进程
+    2：SIGINT，相当于输入ctrl+c，中断一个程序的进行
+    9：SIGKILL，强制中断一个进程的进行
+    15：SIGTERM，以正常的结束进程方式来终止进程
+    17：SIGSTOP，相当于输入ctrl+z，暂停一个进程的进行
     ```
 
 ### 3.5 SublimeText 3
@@ -379,9 +381,9 @@ to source the file to update your current session):
 - [JSON Editor](https://chrome.google.com/webstore/detail/json-editor/lhkmoheomjbkfloacpgllgjcamhihfaj)，JSON 查看、格式化、编辑 web App
 - [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)，JSON 文档查看插件
 - [Koding](https://koding.com/), 支持多种语言环境的在线IDE
-- [LiveReload](http://livereload.com/), 使用浏览器查看正在编辑的本地文件时，自动更新变动，免去手动刷新 
+- [LiveReload](http://livereload.com/), 使用浏览器查看正在编辑的本地文件时，自动更新变动，免去手动刷新
 - [MagicSel](https://chrome.google.com/webstore/detail/%E6%99%BA%E8%83%BD%E9%80%89%E6%8B%A9/dmobhfhmcgcceenmkcpckkffmfkkmkbf)，选中浏览器中的不同货币、单位，转换为人民币，国家标准单位
-- [MarkView](https://chrome.google.com/webstore/detail/markview/iaddkimmopgchbbnmfmdcophmlnghkim), markdown 文档预览插件，支持多种格式化样式 
+- [MarkView](https://chrome.google.com/webstore/detail/markview/iaddkimmopgchbbnmfmdcophmlnghkim), markdown 文档预览插件，支持多种格式化样式
 - [Marxico](https://chrome.google.com/webstore/detail/marxico/kidnkfckhbdkfgbicccmdggmpgogehop)，Evernote 上写 Markdown 文档的辅助 web app
 - [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop), API 测试 web App
 - [Save to Pocket](https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj), 稍后阅读插件

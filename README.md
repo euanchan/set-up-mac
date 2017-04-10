@@ -264,10 +264,8 @@ to source the file to update your current session):
 - [chisel](https://github.com/facebook/chisel), for iOS
 - [synx](https://github.com/venmo/synx), for iOS
 - [tldr](http://tldr-pages.github.io/)，没耐心看 man 时，可使用 tldr 方便查看命令基本用法。
-    ![tldr](https://github.com/EuanChan/set-up-mac/blob/master/screenshot/screenshot-tldr.png)
 - [fastlane](https://github.com/fastlane/fastlane), for iOS
 - [autojump](https://github.com/wting/autojump#usage)
-    ![autojump](https://github.com/EuanChan/set-up-mac/blob/master/screenshot/screenshot-autojump.png)
     - j foo, Jump To A Directory That Contains foo.
     - jo foo, Instead of jumping to a directory, you can open a file explorer window.
 
